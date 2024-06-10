@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(Images/rascacielos-nueva-york.jpg);
+             /* Light Gray */
+        }
+       
+        .contactUs {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-image: linear-gradient(White,gray);
+            padding: 20px;
+            opacity: 0.8;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        aside h1 {
+            color: #001f3f; /* Navy Blue */
+            margin-bottom: 10px;
+            font-weight: bolder;
+            font-size: 50px;
+        }
+        aside h2 {
+            color: #2f4f4f; /* Dark Gray */
+            margin-bottom: 30px;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="submit"],
+        form input[type="text"]::placeholder,
+        form input[type="email"]::placeholder,
+        form input[type="submit"]::placeholder,
+        form textarea::placeholder {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #f2f2f2; /* Light Gray */
+        }
+        form input[type="submit"] {
+            background-color: #001f3f; /* Navy Blue */
+            color: #ffffff; /* White */
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 21px;
+        }
+        form input[type="submit"]:hover {
+            background-color: #003366; /* Darker Navy Blue */
+        }
+        #msg {
+            margin-top: 20px;
+            color: #2f4f4f; /* Dark Gray */
+        }
+    </style>
+</head>
+<body>
+    <div class="contactUs">
+        <div class="container">
+            
+            <aside>
+                <h1>Do you have any questions?</h1>
+                <h2>Feel free to contact us!</h2>
+            </aside>
+            <form id="form" action="/" method="">
+                <input type="text" name="name" id="" placeholder="Name" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="text" name="msg"placeholder='ENTER YOUR MESSAGE' >
+                <input type="submit" value="Submit" id="submit">
+                <p id="msg"></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
